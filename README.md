@@ -14,6 +14,6 @@ Intro Git Demo
 ## Branches
 - `git branch <name>`: create a branch named <branch> wherever you rare (`HEAD`)
 - `git switch branch`: go to that branch
-  - `git explore branch`: go to that branch (old)
+  - `git checkout branch`: go to that branch (old)
   - `git switch -c branch`: create and move to it
 
