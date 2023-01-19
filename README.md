@@ -10,3 +10,10 @@ Intro Git Demo
   - e.g., `git push origin main`, sends codes from branc `main` local computer to the `remote` origin
 - `git pull <WHERE> <WHAT>`: take remote commits on `<WHAT>`, and pull from `<WHERE>`
   - e.g., `git pull origin main`
+
+## Branches
+- `git branch <name>`: create a branch named <branch> wherever you rare (`HEAD`)
+- `git switch branch`: go to that branch
+  - `git checkout branch`: go to that branch (old)
+  - `git switch -c branch`: create and move to it
+
