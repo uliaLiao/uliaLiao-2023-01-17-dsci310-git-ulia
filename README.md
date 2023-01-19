@@ -10,10 +10,16 @@ Intro Git Demo
   - e.g., `git push origin main`, sends codes from branc `main` local computer to the `remote` origin
 - `git pull <WHERE> <WHAT>`: take remote commits on `<WHAT>`, and pull from `<WHERE>`
   - e.g., `git pull origin main`
+- `git log --oneline --graph --all`: shows you all your history
 
 ## Branches
-- `git branch <name>`: create a branch named <branch> wherever you rare (`HEAD`)
-- `git switch branch`: go to that branch
-  - `git checkout branch`: go to that branch (old)
-  - `git switch -c branch`: create and move to it
+- `git branch <name>`: create a branch named wherever you are (`HEAD`)
+- `git switch <name>`: go to that branch
+  - `git checkout <name>`: go to that branch (older version)
+- `git switch -c branch`: create a branch and move to it in 1 comment
+  - `git checkout -b <name>`: same thing using `checkout`
 
+### Cleanup Process
+1. delete branch Pull Request in github
+2. `git fetch --prune`: update references to deleted branches on the remote
+3. `git branch -d <name>`: delete local branch `<name>`
